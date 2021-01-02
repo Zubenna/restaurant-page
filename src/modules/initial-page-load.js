@@ -3,7 +3,7 @@ const menus = ['HOME', 'ABOUT', 'MENU', 'CONTACT']
 const navItem = document.createElement('nav');
 const listBox = document.createElement('ul');
     menus.forEach((item) => {
-      listBox.innerHTML += ` <li><a href="#" id='${item.toLocaleLowerCase()}'>${item}</a></li>`;
+      listBox.innerHTML += ` <li><a href="#" id='${item.toLowerCase()}'>${item}</a></li>`;
      });
     navItem.appendChild(listBox);  
   return navItem;
@@ -41,6 +41,5 @@ const loadPage = () => {
 
   content.appendChild(createFooter());
 }
-
 
 export default loadPage;

@@ -1,14 +1,17 @@
 import './style.css';
 import loadPage from './modules/initial-page-load.js';
 import loadAbout from './modules/about.js';
+import loadHome from './modules/home.js';
 
-const loadComponent = () => {
-  loadPage();
+
+loadPage();
+
 const aboutLink = document.querySelector('#about');
   aboutLink.addEventListener('click', () => {
-    loadAbout();
-  });
-}
-document.body.appendChild(loadComponent());
+     loadAbout();
+   });
 
-
+const homeLink = document.querySelector('#home');
+homeLink.addEventListener('click', () => {
+    loadHome();
+   });
