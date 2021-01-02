@@ -1,0 +1,78 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg_style {
+  background: linear-gradient(to bottom right, rgba(97, 39, 39, 0.442), rgba(41, 40, 40, 0.442)), url('page-background.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  border-bottom: 2px solid #d49d12;
+  height: 4rem;
+}
+
+ul {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+ul a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  text-decoration: none;
+}
+
+.page-title {
+  margin-top: 8rem;
+  /* display: none; */
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 0;
+   color: #d49d12;
+  color: #fff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 3rem;
+  text-align: center;
+  color: #fff;
+  border-top: 2px solid #d49d12;
+  width: 100%;
+  padding-top: 0.4rem;
+}
+
+.section {
+  width: 100%;
+  background: rgba(97, 39, 39);
+  position: absolute;
+  top: 4rem;
+  height: 83vh;
+}
+
+#aboutPage {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#aboutPage p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  text-align: center;
+  margin-top: 4rem;
+}
