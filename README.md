@@ -14,7 +14,7 @@ This is a one page application designed to display basic information about a res
 ![image](images/Home-mobile.png)
 
 ## Menu Page, Mobile view
-![image](images/menu-mobile.png)
+![image](images/menu-mobil.png)
 
 ## Features 
 
