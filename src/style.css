@@ -58,7 +58,6 @@ footer {
   height: 3rem;
   text-align: center;
   color: #fff;
-  border-top: 2px solid #d49d12;
   width: 100%;
   padding-top: 0.4rem;
 }
@@ -68,7 +67,7 @@ footer {
   background: rgba(97, 39, 39);
   position: absolute;
   top: 4rem;
-  height: 83vh;
+  height: 80%;
 }
 
 #aboutPage {
@@ -128,3 +127,62 @@ footer {
   margin-top: 5rem;
 }
 
+@media only screen and (min-width: 280px) and (max-width: 767.9px) {
+  ul a {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    margin-right: 0.3rem;
+  }
+
+  .page-title h1 {
+    font-size: 1.2rem;
+  }
+
+  .page-title h2 {
+    font-size: 1rem;
+  }
+
+  #aboutPage {
+    width: 90%;
+  }
+  
+  #aboutPage p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  #contactPage {
+    width: 95%;
+  }
+
+  #contactPage p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .page-title {
+    margin-top: 15rem;
+  }
+
+  .page-title h1 {
+    font-size: 3.2rem;
+  }
+
+  .page-title h2 {
+    font-size: 2.2rem;
+  }
+  
+  #aboutPage {
+    width: 90%;
+  }
+
+  #aboutPage p {
+    font-size: 2.5rem;
+  }
+}
