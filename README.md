@@ -21,6 +21,7 @@ This is a one page application designed to display basic information about a res
 - Single Page Application.
 - Pages are arranged in modules. 
 - Pages are loaded when equivalent tab is clicked.
+- Webpack compiles ES6 JavaScript code.
 
 ## Project SetUp
 
