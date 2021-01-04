@@ -12,7 +12,7 @@ const switchTab = (module, inputId) => {
   const $content = document.querySelector('#content');
   const $section = document.querySelector('section');
   $content.replaceChild(module, $section);
-    menuIds.forEach((id) => {
+  menuIds.forEach((id) => {
     if (id === inputId) {
       const currentTab = document.getElementById(id);
       currentTab.classList.add('active');

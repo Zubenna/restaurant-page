@@ -60,7 +60,7 @@ const dessert = [
     detail: 'Ganished with Nkwobi',
     price: 550,
   },
-  
+
   {
     name: 'Fruit Salad',
     detail: 'Carrot, Cabbage, Apple, Cucumber',
@@ -76,22 +76,22 @@ const dessert = [
 
 const createMenu = (foodList, foodGroup) => {
   const menuType = document.createElement('h1');
-    menuType.innerHTML = foodGroup;
+  menuType.innerHTML = foodGroup;
   const menuDiv = document.createElement('div');
-    menuDiv.className = 'row';
+  menuDiv.className = 'row';
   foodList.forEach((food) => {
     const menuItem = document.createElement('div');
-      menuItem.className = 'col-sm-12 col-md-6';
+    menuItem.className = 'col-sm-12 col-md-6';
     const menuName = document.createElement('h4');
-      menuName.innerHTML = food.name;
-      menuItem.appendChild(menuName);
+    menuName.innerHTML = food.name;
+    menuItem.appendChild(menuName);
     const menuDetail = document.createElement('h5');
-      menuDetail.innerHTML = food.detail;
-      menuItem.appendChild(menuDetail);
+    menuDetail.innerHTML = food.detail;
+    menuItem.appendChild(menuDetail);
     const menuPrice = document.createElement('h6');
-      menuPrice.innerHTML = `N${food.price}`;
-      menuItem.appendChild(menuPrice);
-      menuDiv.appendChild(menuItem);
+    menuPrice.innerHTML = `N${food.price}`;
+    menuItem.appendChild(menuPrice);
+    menuDiv.appendChild(menuItem);
   });
   menuType.appendChild(menuDiv);
   return menuType;
@@ -99,12 +99,12 @@ const createMenu = (foodList, foodGroup) => {
 
 const loadMenu = () => {
   const menuBox = document.createElement('section');
-    menuBox.id = 'menuSection';
-    menuBox.classList.add('section');
+  menuBox.id = 'menuSection';
+  menuBox.classList.add('section');
   const fGroup = createMenu(foodList, 'Main Food');
-    menuBox.appendChild(fGroup);
+  menuBox.appendChild(fGroup);
   const fGroup2 = createMenu(dessert, 'Dessert');
-    menuBox.appendChild(fGroup2);
+  menuBox.appendChild(fGroup2);
   return menuBox;
 };
 

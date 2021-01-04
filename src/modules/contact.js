@@ -7,20 +7,20 @@ const officeLocation = {
 
 const createContact = () => {
   const locationAdd = document.createElement('h2');
-    locationAdd.id = 'contact-h2';
-    locationAdd.innerHTML = 'Contact Detail';
+  locationAdd.id = 'contact-h2';
+  locationAdd.innerHTML = 'Contact Detail';
   const contactDiv = document.createElement('div');
-    contactDiv.id = 'contactPage';
+  contactDiv.id = 'contactPage';
   const addressText = document.createElement('p');
-    addressText.innerHTML = `<span>Address</span>: ${officeLocation.location}`;
+  addressText.innerHTML = `<span>Address</span>: ${officeLocation.location}`;
   const contactEmail = document.createElement('p');
-    contactEmail.innerHTML = `<span>Email</span>:  ${officeLocation.email}`;
+  contactEmail.innerHTML = `<span>Email</span>:  ${officeLocation.email}`;
   const contactPhone = document.createElement('p');
-    contactPhone.innerHTML = `<span>Phone</span>:  ${officeLocation.phone}`;
-    locationAdd.appendChild(contactDiv);
-    contactDiv.appendChild(addressText);
-    addressText.appendChild(contactEmail);
-    contactEmail.appendChild(contactPhone);
+  contactPhone.innerHTML = `<span>Phone</span>:  ${officeLocation.phone}`;
+  locationAdd.appendChild(contactDiv);
+  contactDiv.appendChild(addressText);
+  addressText.appendChild(contactEmail);
+  contactEmail.appendChild(contactPhone);
   return locationAdd;
 };
 
@@ -30,5 +30,5 @@ const loadContact = () => {
   contactBox.appendChild(createContact());
   return contactBox;
 };
- 
+
 export default loadContact;
