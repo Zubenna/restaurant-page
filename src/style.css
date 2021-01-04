@@ -79,7 +79,6 @@ footer {
 #aboutPage p {
   color: #fff;
   font-size: 2rem;
-  
   text-align: center;
   margin-top: 4rem;
 }
@@ -93,16 +92,16 @@ footer {
   padding: 0;
 }
 
-#menuPage {
-  width: 25%;
-  margin: 0 auto;
-}
-
-#menuPage h4{
+.row h4{
   margin-top: 1rem;
   color: #fff;
   background: rgb(5, 138, 16);
   font-weight: bold;
+}
+
+.row {
+  width: 70%;
+  margin: 0 auto;
 }
 
 #menuPage h6{
@@ -110,3 +109,22 @@ footer {
   font-style: italic;
   font-weight: bold;
 }
+
+#contactPage {
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+#contactPage p {
+  font-size: 1.5rem;
+}
+
+#contactPage span {
+  color:rgb(5, 138, 16);
+}
+
+#contact-h2 {
+  margin-top: 5rem;
+}
+

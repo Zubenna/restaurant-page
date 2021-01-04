@@ -78,17 +78,20 @@ const createMenu = (foodList, foodGroup) => {
 const menuType = document.createElement('h1');
   menuType.innerHTML = foodGroup;
 const menuDiv = document.createElement('div');
-  menuDiv.id = 'menuPage';
+  menuDiv.className = 'row';
       foodList.forEach((food) => {
+        const menuItem = document.createElement('div');
+              menuItem.className = 'col-sm-12 col-md-6';
         const menuName = document.createElement('h4');
               menuName.innerHTML = food.name;
-              menuDiv.appendChild(menuName);
+              menuItem.appendChild(menuName);
         const menuDetail = document.createElement('h5');
               menuDetail.innerHTML = food.detail;
-              menuDiv.appendChild(menuDetail);
+              menuItem.appendChild(menuDetail);
         const menuPrice = document.createElement('h6');
               menuPrice.innerHTML = `N${food.price}`;
-              menuDiv.appendChild(menuPrice);  
+              menuItem.appendChild(menuPrice);
+              menuDiv.appendChild(menuItem);
       });
   menuType.appendChild(menuDiv);
   return menuType;
