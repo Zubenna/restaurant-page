@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg_style {
+  background: linear-gradient(to bottom right, rgba(97, 39, 39, 0.442), rgba(41, 40, 40, 0.442)), url('page-background.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  border-bottom: 2px solid #d49d12;
+  height: 4rem;
+}
+
+ul {
+  padding-top: 1rem;
+  display: flex;
+  width: 60%;
+  list-style-type: none;
+}
+
+ul a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 0.4rem;
+  background: #d49d12;
+  margin-right: 0.6rem;
+}
+
+.page-title {
+  margin-top: 8rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 0;
+  color: #d49d12;
+  color: #fff;
+}
+
+.active {
+  background: rgb(5, 138, 16);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 3rem;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding-top: 0.4rem;
+}
+
+.section {
+  width: 100%;
+  background: rgba(97, 39, 39);
+  position: absolute;
+  top: 4rem;
+  height: 80%;
+}
+
+#aboutPage {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#aboutPage p {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#menuSection {
+  overflow-y: scroll;
+}
+
+#menuSection h1 {
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.row h4 {
+  margin-top: 1rem;
+  color: #fff;
+  background: rgb(5, 138, 16);
+  font-weight: bold;
+}
+
+.row {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#menuPage h6 {
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#contactPage {
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+#contactPage p {
+  font-size: 1.5rem;
+}
+
+#contactPage span {
+  color: rgb(5, 138, 16);
+}
+
+#contact-h2 {
+  margin-top: 5rem;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767.9px) {
+  ul a {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    margin-right: 0.3rem;
+  }
+
+  .page-title h1 {
+    font-size: 1.2rem;
+  }
+
+  .page-title h2 {
+    font-size: 1rem;
+  }
+
+  #aboutPage {
+    width: 90%;
+  }
+
+  #aboutPage p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  #contactPage {
+    width: 95%;
+  }
+
+  #contactPage p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .page-title {
+    margin-top: 15rem;
+  }
+
+  .page-title h1 {
+    font-size: 3.2rem;
+  }
+
+  .page-title h2 {
+    font-size: 2.2rem;
+  }
+
+  #aboutPage {
+    width: 90%;
+  }
+
+  #aboutPage p {
+    font-size: 2.5rem;
+  }
+}
